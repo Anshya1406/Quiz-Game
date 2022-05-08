@@ -1,0 +1,53 @@
+#include<stdio.h>    
+int main()
+{
+     int i,a;
+     char name[200];        //for player name
+     printf("\t\t\t\t -: ENTER A NUMBER :- \n\n");
+     printf("\t\t\t \n 1. START THE QUIZ : \t\t\t \n 0. QUIT THE QUIZ : \t\t\n ");
+     scanf(" %d",&i);  //taking values for choices
+ switch (i)
+ { 
+ 
+     case 1: 
+        /* defining conditions for case 1 */
+
+       printf(" \n \t\t\t ENTER YOUR NAME   ");
+       scanf(" %s",&name);
+       printf("\n\t\t\t PLAYER NAME IS %s",name);
+       printf("\n\n\t\t\t [ SELECT AND ENTER THE ANSWER NO. ]");
+       printf("\n\n\t\t Q1.Who is the father of C language ?\n");
+       printf(" \n\n\n\t\t 1. Dennis Ritchie \n\t\t 2.Steve Jobs\n\n\t");
+       scanf(" %d",&a);
+       if (a==1)         // winning condition 
+            printf(" \n\n\t\t Winner Winner chicken dinner !!!");
+       else if (a==2)     // for wrong choice of answer
+            printf("\n\t\t oops! wrong,better luck next time!!!");
+       else          // for invalid input
+            printf("\n\t\t INVALID !!! ");
+     case 2 :
+     
+        /* defining conditions for case 1 */
+
+       printf(" \n \t\t\t ENTER YOUR NAME   ");
+       scanf(" %s",&name);
+       printf("\n\t\t\t PLAYER NAME IS %s",name);
+       printf("\n\n\t\t\t [ SELECT AND ENTER THE ANSWER NO. ]");
+       printf("\n\n\t\t Q2.What thing can you never eat for breakfast;0  ?\n");
+       printf(" \n\n\n\t\t 1.lunch   \n\t\t 2.icecream\n\n\t");
+       scanf(" %d",&a);
+       if (a==1)         // winning condition 
+            printf(" \n\n\t\t Winner Winner chicken dinner !!!");
+       else if (a==2)     // for wrong choice of answer
+            printf("\n\t\t oops! better luck next time!!!");
+       else          // for invalid input
+            printf("\n\t\t INVALID !!! ");
+    case 0:             // case 0 for quiting the game
+         break;
+    
+    default :                     // if choice is not 0 or 1
+          printf("\n\n\t\t\t invalid input !!!!");
+      break;
+    }
+ return 0; 
+  }
